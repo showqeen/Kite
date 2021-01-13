@@ -1,0 +1,184 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\title{ASSIGNMENT 01}
+\author{Showqeen Yousuf}
+\date{\today}
+\maketitle
+
+\begin{itemize}
+\item{\textbf{Question:}}\\
+
+A Manufacturer produces three products x,y,z which he sells in two markets.Annual sales are indicated below:\\
+
+\begin{tabular}{rcccc}
+MARKET &  PRODUCTS\\
+\hline
+I   & 10000 & 2000 & 18000\\
+\hline
+II  & 6000  & 20000 & 8000\\
+\end{tabular}
+
+a) if unit sale prices of x,y and z are Rs 2.50, Rs 1.50 and Rs 1.00 respectively, find the total revenue in each market with the help of matrix algebra.\\
+b) if the unit cost of the above three commodities are Rs 1.00 and 50 paise respectively.Find the gross profit.\\
+\newpage
+
+\item{\textbf{SOLUTION:}}\\
+a)\\
+
+Applying Matrix Algebra,\\
+
+FROM MARKET I\\
+\[
+\begin{bmatrix}
+   10000 & 2000 & 18000            
+ \end{bmatrix} 
+      *
+ \begin{bmatrix}
+        x\\
+        y\\
+        z
+ \end{bmatrix}
+      = 
+ \begin{bmatrix}
+       TOTAL & REVENUE
+ \end{bmatrix}
+ 
+\]
+
+\[
+\begin{bmatrix}
+   10000 & 2000 & 18000            
+ \end{bmatrix} 
+      *
+ \begin{bmatrix}
+        2.5\\
+        1.5\\
+        1
+ \end{bmatrix}
+      = 
+ \begin{bmatrix}
+       TOTAL & REVENUE
+ \end{bmatrix}
+ 
+\]
+ 
+ \[
+\begin{bmatrix}
+  10000*2.5+2000*1.5+18000*1
+ \end{bmatrix}
+ =
+ \begin{bmatrix}
+        TOTAL & REVENUE
+ \end{bmatrix}
+ \]
+ Therefore,\\
+ 
+ Total Revenue= Rs 46000\\
+ 
+ FROM MARKET II\\
+ 
+ 
+ \[
+\begin{bmatrix}
+   6000 & 20000 & 8000            
+ \end{bmatrix} 
+      *
+ \begin{bmatrix}
+        2.5\\
+        1.5\\
+        1
+ \end{bmatrix}
+ =
+\begin{bmatrix}
+       TOTAL & REVENUE
+ \end{bmatrix} 
+\]
+ \[
+\begin{bmatrix}
+  6000*2.5+20000*1.5+8000*1
+ \end{bmatrix}
+ =
+ \begin{bmatrix}
+        TOTAL & REVENUE
+ \end{bmatrix}
+ \]
+Therefore,\\
+ Total Revenue= Rs 53000\\
+ \newpage
+ b)\\
+ 
+Total Gross Profit:\\
+MARKET I AND MARKET II\\
+ \[
+\begin{bmatrix}
+  10000\\
+   2000\\
+   18000
+ \end{bmatrix}
+ +
+ \begin{bmatrix}
+  6000\\
+   20000\\
+   8000 
+ \end{bmatrix}\\
+ \]
+ =
+
+TOTAL ITEMS FROM I,II\\
+\[
+ \begin{bmatrix}
+  16000\\
+  22000\\
+  26000 
+ \end{bmatrix} 
+ \]
+
+ UNIT SELL PRICE, UNIT COST PRICE AND UNIT PROFIT\\
+ \[
+\begin{bmatrix}
+   2.5 & 1.5 & 1           
+ \end{bmatrix} 
+      -
+ \begin{bmatrix}
+        2 & 1 & 0.5
+ \end{bmatrix}
+ =
+\begin{bmatrix}
+       0.5 & 0.5 & 0.5
+ \end{bmatrix} 
+\]
+
+Now,\\
+
+\[
+ \begin{bmatrix}
+  16000\\
+   22000\\
+   26000 
+ \end{bmatrix} 
+  *
+  \begin{bmatrix}
+       0.5 & 0.5 & 0.5
+ \end{bmatrix}
+   =
+   \begin{bmatrix}
+     GROSS & PROFIT
+ \end{bmatrix}
+  \]
+  \[
+  \begin{bmatrix}
+       0.5*64000
+ \end{bmatrix}
+  =
+  \begin{bmatrix}
+       GROSS & PROFIT
+ \end{bmatrix}
+  \] 
+  
+  Therefore,\\
+  Total Gross Profit = 32000
+  
+\end{itemize}
+\end{document}
